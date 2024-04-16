@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <h1 class="offscreen">To-do List</h1>
+    <main>
+      <section class="new-item-entry">
+        <h2 class="offscreen">New item entry</h2>
+        <form id="item-entry-form">
+          <label for="new-item">Enter a new to do task</label>
+          <input
+            type="text"
+            name="new-item"
+            id="new-item"
+            size="40"
+            autocomplete="off"
+            autofocus
+            placeholder="Add a new to do task"
+            required
+          />
+          <button
+            type="submit"
+            id="add-item"
+            class="btn"
+            title="Add new task"
+            aria-label="Add new task to the list"
+          >
+            +
+          </button>
+        </form>
+      </section>
+
+      <section class="list-container">
+        <h2 class="offscreen">List Container</h2>
+        <menu class="stats">
+          <li>
+            <span>Total</span>
+            <span class="total-tasks">0</span>
+          </li>
+          <li>
+            <span>Completed</span>
+            <span class="completed-tasks">0</span>
+          </li>
+          <li>
+            <span>Remaining</span>
+            <span class="remaining-tasks">0</span>
+          </li>
+        </menu>
+        <div class="list-title">
+          <h1>To Do List:&nbsp;<i class="fa-solid fa-book"></i></h1>
+          <div class="buttons">
+            <button
+              id="clear-items"
+              class="btn disabled"
+              type="reset"
+              title="Clear the list"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+        <hr />
+        <menu class="list-items"></menu>
+      </section>
+    </main>
+  </body>
+</html>
