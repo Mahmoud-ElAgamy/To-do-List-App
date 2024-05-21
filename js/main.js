@@ -92,18 +92,16 @@ function createTask(task) {
 
   const taskElMarkup = `
   <div>
-      <input class="checkbox" type="checkbox" name="list" id=${task.id} ${
-    task.checked ? `checked` : ``
-  } />
-      <span ${!task.checked ? `contenteditable` : ""} for=${task.id}>${
-    task.title
-  }</span>
+      <input class="checkbox" type="checkbox" name="list" id=${task.id} ${task.checked ? `checked` : ``
+    } />
+      <span ${!task.checked ? `contenteditable` : ""} for=${task.id}>${task.title
+    }</span>
   </div>
   <div class="del-edit">
-    <button class="remove-task" title="Remove the task">
+    <button class="remove-task" title="Remove">
       <i class="fa-solid fa-trash remove-task"></i>
     </button>
-    <button class="edit-task" title="Edit the task">
+    <button class="edit-task" title="Edit">
       <i class="fa-solid fa-pencil edit-task"></i>
     </button>
   </div>`;

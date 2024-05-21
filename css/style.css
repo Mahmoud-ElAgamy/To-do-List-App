@@ -1,5 +1,7 @@
+/* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Cairo&family=Montserrat:wght@400;500;600;700&display=swap");
 
+/* Reset */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,6 +12,13 @@ ul {
   list-style: none;
 }
 
+/* Utility Classes */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+/* General Styles */
 body {
   color: #333;
   font-family: "Montserrat", sans-serif;
@@ -18,12 +27,12 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Utility Classes */
-.offscreen {
-  position: absolute;
-  left: -10000px;
+input,
+button {
+  font: inherit;
 }
 
+/* Layout */
 section {
   background-color: #e8f3f8;
   width: 90%;
@@ -225,7 +234,7 @@ section .stats li span:last-of-type {
 }
 
 .item span {
-  padding: 4px;
+  padding: 6px;
   border-radius: 6px;
   font-size: 1.5rem;
 }
@@ -234,7 +243,9 @@ section .stats li span:last-of-type {
   outline: none;
   padding: 0.25rem 0.5rem;
   background-color: #e8f3f8;
+  border: thin solid #eee;
   transform: scale(1.1) translateX(10px);
+  cursor: text;
 }
 
 .item span[contenteditable]:hover {
@@ -247,6 +258,7 @@ section .stats li span:last-of-type {
   cursor: pointer;
   color: #333;
   transition: 0.3s;
+  background-color: transparent;
 }
 
 .item button:hover {
@@ -270,6 +282,7 @@ section .stats li span:last-of-type {
   font-size: 1.25rem;
   border-radius: 10px;
   border: none;
+  transition: 0.3s;
 }
 
 .btn:is(:hover, :focus) {
