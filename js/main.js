@@ -94,7 +94,7 @@ function createTask(task) {
   <div>
       <input class="checkbox" type="checkbox" name="list" id=${task.id} ${task.checked ? `checked` : ``
     } />
-      <span ${!task.checked ? `contenteditable` : ""} for=${task.id}>${task.title
+      <span ${!task.checked ? `contenteditable` : ""} title="Interact to rename" for=${task.id}>${task.title
     }</span>
   </div>
   <div class="del-edit">
