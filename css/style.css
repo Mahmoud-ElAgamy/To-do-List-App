@@ -237,6 +237,7 @@ section .stats li span:last-of-type {
   padding: 6px;
   border-radius: 6px;
   font-size: 1.5rem;
+  word-break: break-word;
 }
 
 .item span[contenteditable]:focus {
@@ -244,7 +245,6 @@ section .stats li span:last-of-type {
   padding: 0.25rem 0.5rem;
   background-color: #e8f3f8;
   border: thin solid #eee;
-  transform: scale(1.1) translateX(10px);
   cursor: text;
 }
 
