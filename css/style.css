@@ -254,7 +254,7 @@ section .stats li span:last-of-type {
 
 .item button {
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   color: #333;
   transition: 0.3s;
